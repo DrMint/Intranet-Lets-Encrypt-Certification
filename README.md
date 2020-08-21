@@ -4,7 +4,7 @@ This guide details how to setup a Let's Encrypt SSL Certification on a server wh
 ## Prerequisites
 - Having a public domain name (from now own we will consider the name example.com)
 - Choosing a name for the subdomain of that intranet server (we will choose local.example.com)
-- Certbot installed on the intranet server
+- [Certbot](https://github.com/certbot/certbot) installed on the intranet server
 - The intranet server must have a static local ip address (IPv4 or IPv6) or a defined name on the local network DNS server (Hostname)
 - The intranet server doesn't have to be a web server, it can be a SFTP server, a MySQL database, any technology that uses SSL/TLS certificates. In this example, we will assume that the server is a web server running on Apache.
 

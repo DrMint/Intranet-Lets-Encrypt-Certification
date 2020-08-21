@@ -1,5 +1,5 @@
 # Non-public facing Let's Encrypt Certification
-This guide details how to setup a Let's Encrypt SSL Certification on a server which isn't accessible for the internet (Non-public facing server or Intranet Server).
+This guide details how to setup a Let's Encrypt SSL Certification on a server which isn't accessible on the internet (Non-public facing server or Intranet Server).
 
 ## Prerequisites
 - Having a public domain name (from now own we will consider the name example.com)

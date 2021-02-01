@@ -2,7 +2,7 @@
 This guide details how to setup a Let's Encrypt SSL Certification on a server which isn't accessible on the internet (Non-public facing server or Intranet Server).
 
 ## Prerequisites
-- Having a public domain name (from now own we will consider the name example.com)
+- Having a public domain name (from now on we will consider the name example.com)
 - Choosing a name for the subdomain of that intranet server (we will choose local.example.com)
 - [Certbot](https://github.com/certbot/certbot) installed on the intranet server
 - The intranet server must have a static local ip address (IPv4 or IPv6) or a defined name on the local network DNS server (Hostname)

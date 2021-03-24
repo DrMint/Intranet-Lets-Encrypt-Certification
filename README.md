@@ -3,8 +3,8 @@ This guide details how to setup a Let's Encrypt SSL Certification on a server wh
 
 ## Prerequisites
 - Having a public domain name (from now on we will consider the name example.com)
-- Choosing a name for the subdomain of that intranet server (we will choose myserv.example.com)
-- [Certbot](https://github.com/certbot/certbot) installed on the intranet server
+- Choosing a name for the subdomain of that intranet server (we will choose myserv.example.com). You can also choose to use example.com directly.
+- [Certbot](https://github.com/certbot/certbot) installed on the intranet server. You can go on [this page](https://certbot.eff.org/instructions) to learn how to install Certbot (but just install it, you don't need to run Certbot yet).
 - The intranet server must have a static local ip address (IPv4 or IPv6) or a defined name on the local network DNS server (Hostname)
 - The intranet server doesn't have to be a web server, it can be a SFTP server, a MySQL database, any technology that uses SSL/TLS certificates. In this example, we will assume that the server is a web server running on Apache.
 
@@ -20,6 +20,8 @@ In this example we'll be using a type A record which looks like this:
 myserv 1800 IN A 192.168.1.200
 ```
 Of course, you usually don't have to write the line directly and you can use whatever form the registrar provides you.
+
+If you want to use example.com directly (no subdomain), use @ instead of myserv in the DNS record line.
 
 ## Setting the server
 On the server (in this example, it's running on Debian 10) add this script to `/etc/apache2/sites-available/default-le-ssl.conf` (or whatever file you're using for the VirtualHost):
